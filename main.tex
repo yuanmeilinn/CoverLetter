@@ -1,0 +1,46 @@
+\documentclass[12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+\documentclass[varwidth=true, border=2pt]{standalone}
+
+\usepackage{enumitem}\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+
+\input{info}
+
+\begin{document}
+
+
+% Header
+\begin{center}
+{\fontsize{35}{0}\selectfont\scshape \myname}
+
+\href{mailto:\myemail}{\faEnvelope\enspace \myemail}\hfill
+\href{https://linkedin.com/in/\mylinkedin}{\faLinkedinIn\enspace linkedin.com/in/\mylinkedin}\hfill
+\href{tel:\myphone}{\faPhone\enspace \myphone}\hfill
+
+\end{center}
+
+\vspace{0.1in}
+{\fontsize{14}{}\textbf{\textit{Dear recruiter,}}}
+% Opening block
+
+% Body
+\vspace{-0.1in}\setlength\parindent{24pt}
+\noindent\input{body}
+
+
+\begin{flushright}
+\closer,
+
+
+\myname\\
+\end{flushright}
+
+\end{document}
